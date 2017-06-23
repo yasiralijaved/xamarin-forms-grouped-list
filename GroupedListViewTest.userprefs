@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{E51CA873-565A-4B41-9EC8-3CECF29C8C35}|Default">
+  <MonoDevelop.Ide.ItemProperties.GroupedListViewTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7AF4EEDD-4308-4D46-AD54-B04CF07C9A72" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GroupedListViewTest/Converters/QuestionTypeToVisibilityValueConverter.cs">
+    <Files>
+      <File FileName="GroupedListViewTest/Pages/HomePage.xaml" Line="29" Column="65" />
+      <File FileName="GroupedListViewTest/ViewModels/HomeViewModel.cs" Line="24" Column="114" />
+      <File FileName="GroupedListViewTest/ViewModels/QuestionGroupViewModel.cs" Line="46" Column="24" />
+      <File FileName="GroupedListViewTest/ViewModels/QuestionViewModel.cs" Line="11" Column="22" />
+      <File FileName="GroupedListViewTest/App.xaml.cs" Line="16" Column="10" />
+      <File FileName="GroupedListViewTest/Converters/BoolToVisibilityValueConverter.cs" Line="17" Column="10" />
+      <File FileName="GroupedListViewTest/Converters/QuestionTypeToVisibilityValueConverter.cs" Line="16" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GroupedListViewTest" expanded="True">
+            <Node name="GroupedListViewTest" expanded="True">
+              <Node name="Converters" expanded="True">
+                <Node name="QuestionTypeToVisibilityValueConverter.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="GroupedListViewTest.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GroupedListViewTest.Pages.HomePage" xmlns:localConverters="clr-namespace:GroupedListViewTest.Converters;assembly=GroupedListViewTest">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <localConverters:BoolToVisibilityValueConverter x:Key="BoolToVisibilityValueConverter" />
+            <localConverters:QuestionTypeToVisibilityValueConverter x:Key="QuestionTypeToVisibilityValueConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="0,60,0,0">
+            <ListView ItemsSource="{Binding QuestionsGrouped}" IsGroupingEnabled="True" GroupDisplayBinding="{Binding Header}" GroupShortNameBinding="{Binding ShortName}" HasUnevenRows="True">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="75">
+                            <Grid BackgroundColor="#3498DB">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width=".2*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Header}" TextColor="White" VerticalOptions="Center" Margin="10,0,0,0" />
+                                <Switch Grid.Column="1" IsVisible="{Binding RTREnable,Converter={StaticResource BoolToVisibilityValueConverter}}" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,10,0" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width=".4*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Title}" VerticalOptions="Center" Margin="10,0,0,0" />
+                                <Button Grid.Column="1" Text="{Binding QuestionType}" IsVisible="{Binding QuestionType, Converter={StaticResource QuestionTypeToVisibilityValueConverter}}" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,10,0" />
+                            </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
