@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.GroupedListViewTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7AF4EEDD-4308-4D46-AD54-B04CF07C9A72" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GroupedListViewTest/Converters/QuestionTypeToVisibilityValueConverter.cs">
     <Files>
-      <File FileName="GroupedListViewTest/Pages/HomePage.xaml" Line="29" Column="65" />
+      <File FileName="GroupedListViewTest/Pages/HomePage.xaml" Line="45" Column="15" />
       <File FileName="GroupedListViewTest/ViewModels/HomeViewModel.cs" Line="24" Column="114" />
       <File FileName="GroupedListViewTest/ViewModels/QuestionGroupViewModel.cs" Line="46" Column="24" />
       <File FileName="GroupedListViewTest/ViewModels/QuestionViewModel.cs" Line="11" Column="22" />

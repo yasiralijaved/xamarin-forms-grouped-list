@@ -8,7 +8,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Margin="0,60,0,0">
-            <ListView ItemsSource="{Binding QuestionsGrouped}" IsGroupingEnabled="True" GroupDisplayBinding="{Binding Header}" GroupShortNameBinding="{Binding ShortName}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding QuestionsGrouped}" IsGroupingEnabled="True" HasUnevenRows="True">
                 <ListView.GroupHeaderTemplate>
                     <DataTemplate>
                         <ViewCell Height="75">
